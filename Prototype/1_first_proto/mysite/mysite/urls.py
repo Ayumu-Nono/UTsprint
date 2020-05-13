@@ -20,4 +20,5 @@ from django.views import generic
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', generic.TemplateView.as_view(template_name='top.html')),
+    path('articles/', include('articles.urls')),
 ]
